@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    background-color: #063663;
+}
+.box{
+    background-color: white;
+    padding: 20px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+h1{
+  margin: 15px 0;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+input{
+    font-size: 25px;
+    padding: 8px;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 5px;
+    width: 90%;
+}
+p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.scrambleWord{
+    color: #063663;
+    font-size: 30px;
+}
+.result{
+    color: rgb(2, 33, 2);
+}
+button{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+}
+.btns button:nth-child(1){
+    background-color: rgb(4, 103, 4);
+    color: white;
+    font-weight: 600;
+}
+.btns button:nth-child(2){
+    background-color: rgb(4, 17, 103);
+    color: white;
+    font-weight: 600;
+}
+button:active{
+    scale: .9;
+}
+@media screen and (max-width: 450px) {
+    .box{
+     width: 100%;
+     padding: 30px 0;
+    }
+    input{
+        font-size: 20px;
+        width: 80%;
+    }
+    h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+h1{
+    font-size: 25px;
+}
+}
